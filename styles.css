@@ -1,0 +1,198 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: blue;
+  padding-top: 90px;
+ color: blue;
+}
+html {
+  scroll-padding-top: 90px; 
+}
+
+
+.navbar-title {
+  font-size: 44px;
+  font-weight: bold;
+  color: blue; 
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.mx-auto {
+  padding-left: 450px;
+}
+
+.navbar-nav .nav-link {
+  color: blue;
+  font-weight: 600;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue; 
+ background-color: lightblue; 
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(255, 87, 34, 0.3);
+}
+
+
+.carousel-img {
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 18px rgba(255, 87, 34, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(255, 87, 34, 0.4);
+  border-color: blue; 
+}
+
+.product-card h5,
+.product-card p {
+  min-height: 48px;
+  color: #444;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  background: linear-gradient(45deg, #ffccbc, #ffe0b2); 
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.07);
+}
+
+.image-container .hover-img {
+  opacity: 0;
+}
+
+.image-container:hover .hover-img {
+  opacity: 1;
+}
+
+.image-container:hover .default-img {
+  opacity: 0;
+}
+
+
+.default-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+#about {
+  border: 3px solid blue; 
+  border-radius: 12px;
+  padding: 35px;
+  margin-bottom: 50px;
+  background: #fff7f2;
+  box-shadow: 0 6px 15px rgba(255, 87, 34, 0.15);
+  color: #5d4037;
+  font-weight: 600;
+}
+
+
+.container.py-5 > .row {
+  border: 3px solid blue; 
+  border-radius: 12px;
+  padding: 35px;
+  margin-bottom: 50px;
+  background: #e8f5e9; 
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.15);
+}
+
+.container.py-5 > .row > .col-md-6 {
+  border: 1.5px solid blue;
+  border-radius: 12px;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(56, 142, 60, 0.1);
+  color: blue;
+}
+
+
+footer {
+  font-size: 14px;
+  color: #f0f0f0;
+  background: linear-gradient(90deg, blue, blue); /* warm gradient footer */
+  padding: 25px 0;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+footer.bg-dark {
+  border-top: 4px solid blue; 
+}
+.navbar-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0033ff;
+}
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  color: #0033ff;
+}
+.navbar-nav .nav-link:hover {
+  color: #0000aa;
+}
+nav ul.nav li a {
+  font-weight: 500;
+  font-size: 16px;
+}
+nav ul.nav {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
